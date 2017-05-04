@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export REDIS_HOST=$REDIS_PORT_6379_TCP_ADDR
+bundle install --path vendor/bundle --without development test --clean
+exec bundle exec lita
